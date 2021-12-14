@@ -9,19 +9,16 @@ import java.util.Map;
 public class Day02 implements Day {
     @Override
     public String part1(List<String> input) {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("horizontalPosition", 0);
-        map.put("depth", 0);
-
+        int depth = 0, horizontalPosition = 0;
         for(String i : input) {
             String[] tmp = i.split(" ");
             switch (tmp[0]) {
-                case "forward" -> map.put("horizontalPosition", map.get("horizontalPosition") + Integer.parseInt(tmp[1]));
-                case "down" -> map.put("depth", map.get("depth") + Integer.parseInt(tmp[1]));
-                case "up" -> map.put("depth", map.get("depth") - Integer.parseInt(tmp[1]));
+                case "forward" -> horizontalPosition += Integer.parseInt(tmp[1]);
+                case "down" -> depth += Integer.parseInt(tmp[1]);
+                case "up" -> depth -= Integer.parseInt(tmp[1]);
             }
         }
-        return map.get("horizontalPosition") * map.get("depth") + "";
+        return depth * horizontalPosition + "";
     }
 
     @Override
