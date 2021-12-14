@@ -1,6 +1,7 @@
 package com.aoc;
 
 import com.aoc.Day01.Day01;
+import com.aoc.Day02.Day02;
 
 import java.io.*;
 import java.util.HashMap;
@@ -17,6 +18,7 @@ class App {
     static {
         DAYS = new HashMap<>();
         DAYS.put(1, new Day01());
+        DAYS.put(2, new Day02());
     }
 
     private static List<String> loadInput(int day){
