@@ -23,6 +23,19 @@ public class Day02 implements Day {
 
     @Override
     public String part2(List<String> input) {
-        return input.get(0);
+        int depth = 0, horizontalPosition = 0, aim = 0;
+        for(String i : input) {
+            String[] tmp = i.split(" ");
+            int value = Integer.parseInt(tmp[1]);
+            switch (tmp[0]) {
+                case "forward" -> {
+                    horizontalPosition += value;
+                    depth += value * aim;
+                }
+                case "down" -> aim += value;
+                case "up" -> aim -= value;
+            }
+        }
+        return depth * horizontalPosition + "";
     }
 }
