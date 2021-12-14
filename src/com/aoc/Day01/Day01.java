@@ -28,7 +28,20 @@ public class Day01 implements Day {
 
     @Override
     public String part2(List<String> input) {
-        return input.isEmpty() ? "" : input.get(0);
+        List<Integer> integerList = new ArrayList<>();
+        for(String j : input) {
+            integerList.add(Integer.parseInt(j));
+        }
+
+        int length = integerList.size(), before = 0, cpt = 0;
+        for(int i = 0; i < length - 2; i++) {
+            int tmp = integerList.get(i) + integerList.get(i + 1) + integerList.get(i + 2);
+            if(tmp > before && before != 0) {
+                cpt ++;
+            }
+            before = tmp;
+        }
+        return input.isEmpty() ? "" : cpt + "";
     }
 
 }
