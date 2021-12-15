@@ -2,24 +2,24 @@ package com.aoc.Day03;
 
 import com.aoc.Day;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Day03 implements Day {
     @Override
     public String part1(List<String> input) {
         int longueur = input.size();
-        int[] somme = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] somme = new int[input.get(0).length()];
+        Arrays.fill(somme, 0);
+
         StringBuilder epsilon = new StringBuilder();
         StringBuilder gamma = new StringBuilder();
         for(String i : input) {
-            for(int j = 0; j < 12; j++) {
+            for(int j = 0; j < somme.length; j++) {
                 if(i.charAt(j) == '1') somme[j]++;
             }
         }
-        for(int i = 0; i < 12; i++) {
-            if(somme[i] > longueur / 2) {
+        for (int j : somme) {
+            if (j > longueur / 2) {
                 epsilon.append('1');
                 gamma.append('0');
             } else {
@@ -35,3 +35,23 @@ public class Day03 implements Day {
         return input.get(0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
