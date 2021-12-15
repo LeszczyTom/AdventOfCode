@@ -31,6 +31,7 @@ public class Day04 implements Day {
                 List<String> row = new ArrayList<>();
                 for(String j : input.get(i).split(" {2}")) {
                     row.addAll(Arrays.asList(j.split(" ")));
+                    row.remove("");
                 }
                 board.add(row);
             }
@@ -52,17 +53,10 @@ public class Day04 implements Day {
     }
 
     public boolean checkWin(List<List<String>> board) {
-        boolean vic = true;
-        for(List<String> i : board) {
-            for(String j : i) {
-                if(!j.equals("-1")) {
-                    vic = false;
-                    break;
-                }
-            }
-            if(vic) return true;
-        }
         for(int i = 0; i < 5; i++) {
+            if(board.get(0).get(i).equals("-1") && board.get(1).get(i).equals("-1") && board.get(2).get(i).equals("-1")
+                && board.get(3).get(i).equals("-1") && board.get(4).get(i).equals("-1")) return true;
+
             if(board.get(i).get(0).equals("-1") && board.get(i).get(1).equals("-1") && board.get(i).get(2).equals("-1")
                 && board.get(i).get(3).equals("-1") && board.get(i).get(4).equals("-1")) return true;
         }
@@ -81,6 +75,21 @@ public class Day04 implements Day {
 
     @Override
     public String part2(List<String> input) {
+        List<String> numberDrawnString = new ArrayList<>(Arrays.asList(input.get(0).split(",")));
+        Map<Integer, List<List<String>>> boards = parser(input);
+
+        Set<Integer> keySet = boards.keySet();
+        List<Integer> out = new ArrayList<>();
+        for(String i : numberDrawnString) {
+            for(int j : keySet) {
+                if(!out.contains(j)) {
+                    if (checkForValue(boards.get(j), i)) {
+                        if (keySet.size() - out.size() == 1) return result(boards.get(j), i);
+                        else out.add(j);
+                    }
+                }
+            }
+        }
         return null;
     }
 }
