@@ -1,4 +1,4 @@
-package test.aoc.Day03;
+package test.aoc.Day04;
 
 import com.aoc.Day04.Day04;
 import org.junit.Test;
