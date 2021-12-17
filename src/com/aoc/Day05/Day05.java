@@ -9,7 +9,12 @@ public class Day05 implements Day {
 
     @Override
     public String part1(List<String> input) {
-        populateMap(input);
+        for(String i : input) {
+            String[] tmp = i.split(" -> ");
+            String[] leftPart = tmp[0].split(",");
+            String[] rightPart = tmp[1].split(",");
+            populateMap(leftPart, rightPart);
+        }
         return getTimesLinesOverlap() + "";
     }
 
@@ -24,19 +29,14 @@ public class Day05 implements Day {
         return cpt;
     }
 
-    private void populateMap(List<String> input) {
-        for(String i : input) {
-            String[] tmp = i.split(" -> ");
-            String[] leftPart = tmp[0].split(",");
-            String[] rightPart = tmp[1].split(",");
-
+    private void populateMap(String[] leftPart, String[] rightPart) {
             if(leftPart[0].equals(rightPart[0])) {
                 addVertical(leftPart[0], leftPart[1], rightPart[1]);
             }
             if(leftPart[1].equals(rightPart[1])) {
                addHorizontal(leftPart[1], leftPart[0], rightPart[0]);
             }
-        }
+
     }
 
     private void addHorizontal(String y, String leftPartX, String rightPartX) {
@@ -69,6 +69,60 @@ public class Day05 implements Day {
 
     @Override
     public String part2(List<String> input) {
-        return null;
+        for(String i : input) {
+            String[] tmp = i.split(" -> ");
+            String[] leftPart = tmp[0].split(",");
+            String[] rightPart = tmp[1].split(",");
+            populateMapWithDiagonalLines(leftPart, rightPart);
+        }
+        return getTimesLinesOverlap() + "";
+    }
+
+    private void populateMapWithDiagonalLines(String[] leftPart, String[] rightPart) {
+        populateMap(leftPart, rightPart);
+
+        Integer[] sortedX = sort(Integer.parseInt(leftPart[0]), Integer.parseInt(rightPart[0]));
+        Integer[] sortedY = sort(Integer.parseInt(leftPart[1]), Integer.parseInt(rightPart[1]));
+        int diffX = sortedX[1] - sortedX[0];
+        int diffY = sortedY[1] - sortedY[0];
+        if(diffX == diffY) {
+            addDiagonals(leftPart, rightPart, diffX);
+        }
+    }
+
+    private void addDiagonals(String[] leftPart, String[] rightPart, int diff) {
+        Integer[] sortedY = sort(Integer.parseInt(leftPart[1]), Integer.parseInt(rightPart[1]));
+
+        if(leftPart[1].equals(sortedY[0] + "")) {
+            if(Integer.parseInt(leftPart[0]) > Integer.parseInt(rightPart[0])) {
+                addDiagonalRightToLeft(leftPart[0], leftPart[1], diff);
+                return;
+            }
+            addDiagonalLeftToRight(leftPart[0], leftPart[1], diff);
+            return;
+        }
+        if(Integer.parseInt(rightPart[0]) > Integer.parseInt(leftPart[0])) {
+            addDiagonalRightToLeft(rightPart[0], rightPart[1], diff);
+            return;
+        }
+        addDiagonalLeftToRight(rightPart[0], rightPart[1], diff);
+    }
+
+    private void addDiagonalRightToLeft(String x, String y, int diff) {
+        for (int i = 0; i <= diff; i++) {
+            int tmpX = Integer.parseInt(x) - i;
+            int tmpy = Integer.parseInt(y) + i;
+            if (!_map.containsKey(tmpX + "")) _map.put(tmpX + "", new ArrayList<>());
+            _map.get(tmpX + "").add(tmpy + "");
+        }
+    }
+
+    private void addDiagonalLeftToRight(String x, String y, int diff) {
+        for (int i = 0; i <= diff; i++) {
+            int tmpX = Integer.parseInt(x) + i;
+            int tmpY = Integer.parseInt(y) + i;
+            if (!_map.containsKey(tmpX + "")) _map.put(tmpX + "", new ArrayList<>());
+            _map.get(tmpX + "").add(tmpY + "");
+        }
     }
 }
