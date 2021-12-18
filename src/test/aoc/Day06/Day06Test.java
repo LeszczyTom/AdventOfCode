@@ -12,7 +12,7 @@ public class Day06Test {
     @Test
     public void testPart1(){
         // Given
-        List<String> input = Arrays.asList("3","4","3","1","2");
+        List<String> input = List.of("3,4,3,1,2");
 
         // When
         String result = new Day06().part1(input);
@@ -23,14 +23,12 @@ public class Day06Test {
 
     @Test
     public void testPart2(){
-        List<String> input = Arrays.asList(
-               ""
-        );
+        List<String> input = List.of("3,4,3,1,2");
 
         // When
         String result = new Day06().part2(input);
 
         // Then
-        assertEquals("12", result);
+        assertEquals("26984457539", result);
     }
 }
