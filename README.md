@@ -9,7 +9,7 @@
 | ✔ [Day 3: Binary Diagnostic](src/com/aoc/Day03/Day03.java )   |   *    |   *    |
 | ✔ [Day 4: Giant Squid](src/com/aoc/Day04/Day04.java)    |   *    |    *    |
 | ✔ [Day 5: Hydrothermal Venture](src/com/aoc/Day05/Day05.java) |   *     |   *    |
-|   [Day 6: Lanternfish](src/com/aoc/Day06/Day06.java) |   *    |        |
+| ✔ [Day 6: Lanternfish](src/com/aoc/Day06/Day06.java) |   *    |   *    |
 |   [Day 7: The Treachery of Whales]() |        |        |
 |   [Day 8: Seven Segment Search]() |        |        |
 |   [Day 9: Smoke Basin]() |        |        |
