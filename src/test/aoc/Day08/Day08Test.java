@@ -49,6 +49,6 @@ public class Day08Test {
         String result = new Day08().part2(input);
 
         // Then
-        assertEquals("168", result);
+        assertEquals("61229", result);
     }
 }
