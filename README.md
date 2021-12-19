@@ -11,7 +11,7 @@
 | ✔ [Day 5: Hydrothermal Venture](src/com/aoc/Day05/Day05.java) |   *     |   *    |
 | ✔ [Day 6: Lanternfish](src/com/aoc/Day06/Day06.java) |   *    |   *    |
 | ✔ [Day 7: The Treachery of Whales](src/com/aoc/Day07/Day07.java) |   *    |   *    |
-|   [Day 8: Seven Segment Search]() |        |        |
+|   [Day 8: Seven Segment Search](src/com/aoc/Day08/Day08.java) |   *    |        |
 |   [Day 9: Smoke Basin]() |        |        |
 |   [Day 10: Syntax Scoring]() |        |        |
 |   [Day 11: Dumbo Octopus]() |        |        |
