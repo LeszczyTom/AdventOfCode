@@ -7,6 +7,7 @@ import com.aoc.Day04.Day04;
 import com.aoc.Day05.Day05;
 import com.aoc.Day06.Day06;
 import com.aoc.Day07.Day07;
+import com.aoc.Day08.Day08;
 
 import java.io.*;
 import java.util.HashMap;
@@ -29,6 +30,7 @@ class App {
         DAYS.put(5, new Day05());
         DAYS.put(6, new Day06());
         DAYS.put(7, new Day07());
+        DAYS.put(8, new Day08());
     }
 
     private static List<String> loadInput(int day){
