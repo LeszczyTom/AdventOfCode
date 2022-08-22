@@ -30,8 +30,10 @@ fn part2(input: Vec<String>) -> u32 {
 }
 
 pub fn solution() {
+    println!("Day 1 \n");
     println!("Part 1: {}", part1(get_input_of_day(1)));
     println!("Part 2: {}", part2(get_input_of_day(1)));
+    println!("-------------------------------------\n");
 }
 
 #[cfg(test)]
