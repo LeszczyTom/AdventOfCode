@@ -1,3 +1,4 @@
+[![Rust](https://github.com/LeszczyTom/AdventOfCode/actions/workflows/rust.yml/badge.svg)](https://github.com/LeszczyTom/AdventOfCode/actions/workflows/rust.yml)
 # AdventOfCode
 
 ## 2021 Progress
