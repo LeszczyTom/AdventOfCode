@@ -1,9 +1,11 @@
 use std::fs;
 
 pub mod day_1;
+pub mod day_2;
 
 fn main() {
     day_1::solution();
+    day_2::solution();
 }
 
 fn get_input_of_day(nb: u8) -> Vec<String> {
