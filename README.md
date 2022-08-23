@@ -7,7 +7,7 @@
 |----------------------------------------------------------------------------------------|:--------:|:--------:|
 | Day 1: Sonar Sweep                                   |   [✔](java/src/com/aoc/Day01/Day01.java)    |   [✔](rust/advent/src/day_1.rs)    |
 |  Day 2: Dive!                                        |   [✔](src/com/aoc/Day02/Day02.java)    |   [✔](rust/advent/src/day_2.rs)    |
-|  Day 3: Binary Diagnostic  |   [✔](src/com/aoc/Day03/Day03.java )    |       |
+|  Day 3: Binary Diagnostic  |   [✔](src/com/aoc/Day03/Day03.java )    |   [✔](rust/advent/src/day_3.rs)    |
 |  Day 4: Giant Squid    |   [✔](src/com/aoc/Day04/Day04.java)    |        |
 |  Day 5: Hydrothermal Venture |   [✔](src/com/aoc/Day05/Day05.java)     |       |
 |  Day 6: Lanternfish|   [✔](src/com/aoc/Day06/Day06.java)     |       |
