@@ -7,7 +7,7 @@ fn part1(input: Vec<String>) -> u32 {
     let mut gamma: u32 = 0;
     let mut epsilon: u32 = 0;
 
-    for i in 0..input[0].len() {
+    for _ in 0..input[0].len() {
         array.push(0);
     }
 
@@ -37,85 +37,85 @@ fn part1(input: Vec<String>) -> u32 {
 fn part2(input: Vec<String>) -> u32 {
     let mut array: Vec<i32> = Vec::new();
 
-    for i in 0..input[0].len() {
+    for _ in 0..input[0].len() {
         array.push(0);
     }
 
-    let mut O2_rating: Vec<String> = input.clone();
+    let mut o2_rating: Vec<String> = input.clone();
     for  j in 0..array.len() {
-        if O2_rating.len() == 1 {
+        if o2_rating.len() == 1 {
             break;
         }
         let mut tmp: Vec<String> = Vec::new();
         let mut bit_criteria: i16 = 0;
 
-        for k in 0..O2_rating.len() {
-            if O2_rating[k].chars().nth(j).unwrap() == '1' {
+        for k in 0..o2_rating.len() {
+            if o2_rating[k].chars().nth(j).unwrap() == '1' {
                 bit_criteria += 1;
             } else {
                 bit_criteria -= 1;
             }
         }
 
-        for i in 0..O2_rating.len() {
-            let mut c = O2_rating[i].chars().nth(j).unwrap();
+        for i in 0..o2_rating.len() {
+            let c = o2_rating[i].chars().nth(j).unwrap();
             if bit_criteria >= 0 {
                 if c == '1' {
-                    tmp.push(O2_rating[i].clone());
+                    tmp.push(o2_rating[i].clone());
                 }
             } else {
                 if c == '0' {
-                    tmp.push(O2_rating[i].clone());
+                    tmp.push(o2_rating[i].clone());
                 }
             }
         }
-        O2_rating = tmp;
+        o2_rating = tmp;
     }
 
-    let mut CO2_rating: Vec<String> = input.clone();
+    let mut co2_rating: Vec<String> = input.clone();
     for  j in 0..array.len() {
-        if CO2_rating.len() == 1 {
+        if co2_rating.len() == 1 {
             break;
         }
         let mut tmp: Vec<String> = Vec::new();
         let mut bit_criteria: i16 = 0;
 
-        for k in 0..CO2_rating.len() {
-            if CO2_rating[k].chars().nth(j).unwrap() == '1' {
+        for k in 0..co2_rating.len() {
+            if co2_rating[k].chars().nth(j).unwrap() == '1' {
                 bit_criteria += 1;
             } else {
                 bit_criteria -= 1;
             }
         }
 
-        for i in 0..CO2_rating.len() {
-            let mut c = CO2_rating[i].chars().nth(j).unwrap();
+        for i in 0..co2_rating.len() {
+            let c = co2_rating[i].chars().nth(j).unwrap();
             if bit_criteria >= 0 {
                 if c == '0' {
-                    tmp.push(CO2_rating[i].clone());
+                    tmp.push(co2_rating[i].clone());
                 }
             } else {
                 if c == '1' {
-                    tmp.push(CO2_rating[i].clone());
+                    tmp.push(co2_rating[i].clone());
                 }
             }
         }
-        CO2_rating = tmp;
+        co2_rating = tmp;
     }
 
-    let mut O2_chars = O2_rating[0].chars();
-    let mut O2_sum = 0;
-    for i in 0..O2_rating[0].len() {
-        O2_sum += O2_chars.next_back().unwrap().to_digit(10).unwrap() as i32 * 2_i32.pow(i as u32);
+    let mut o2_chars = o2_rating[0].chars();
+    let mut o2_sum = 0;
+    for i in 0..o2_rating[0].len() {
+        o2_sum += o2_chars.next_back().unwrap().to_digit(10).unwrap() as i32 * 2_i32.pow(i as u32);
     }
     
-    let mut CO2_chars = CO2_rating[0].chars();
-    let mut CO2_sum = 0;
-    for i in 0..O2_rating[0].len() {
-        CO2_sum += CO2_chars.next_back().unwrap().to_digit(10).unwrap() as i32 * 2_i32.pow(i as u32);
+    let mut co2_chars = co2_rating[0].chars();
+    let mut co2_sum = 0;
+    for i in 0..o2_rating[0].len() {
+        co2_sum += co2_chars.next_back().unwrap().to_digit(10).unwrap() as i32 * 2_i32.pow(i as u32);
     }
 
-    return (O2_sum * CO2_sum).try_into().unwrap();
+    return (o2_sum * co2_sum).try_into().unwrap();
 }
 
 pub fn solution() {
