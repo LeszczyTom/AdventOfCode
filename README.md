@@ -6,13 +6,13 @@
 |                                                                                     | Java | Rust |
 |----------------------------------------------------------------------------------------|:--------:|:--------:|
 | Day 1: Sonar Sweep                                   |   [✔](java/src/com/aoc/Day01/Day01.java)    |   [✔](rust/advent/src/day_1.rs)    |
-|  Day 2: Dive!                                        |   [✔](src/com/aoc/Day02/Day02.java)    |   [✔](rust/advent/src/day_2.rs)    |
-|  Day 3: Binary Diagnostic  |   [✔](src/com/aoc/Day03/Day03.java )    |   [✔](rust/advent/src/day_3.rs)    |
-|  Day 4: Giant Squid    |   [✔](src/com/aoc/Day04/Day04.java)    |        |
-|  Day 5: Hydrothermal Venture |   [✔](src/com/aoc/Day05/Day05.java)     |       |
-|  Day 6: Lanternfish|   [✔](src/com/aoc/Day06/Day06.java)     |       |
-|  Day 7: The Treachery of Whales |   [✔](src/com/aoc/Day07/Day07.java)    |       |
-|   Day 8: Seven Segment Search |   [✔](src/com/aoc/Day08/Day08.java)    |        |
+|  Day 2: Dive!                                        |   [✔](java/src/com/aoc/Day02/Day02.java)    |   [✔](rust/advent/src/day_2.rs)    |
+|  Day 3: Binary Diagnostic  |   [✔](java/src/com/aoc/Day03/Day03.java )    |   [✔](java/rust/advent/src/day_3.rs)    |
+|  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |        |
+|  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |       |
+|  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |       |
+|  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |       |
+|   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |        |
 |  Day 9: Smoke Basin |        |        |
 |  Day 10: Syntax Scoring |        |        |
 |   Day 11: Dumbo Octopus |        |        |
