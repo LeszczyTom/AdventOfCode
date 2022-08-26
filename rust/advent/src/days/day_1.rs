@@ -1,4 +1,7 @@
 use crate::*;
+use std::time::Instant;
+
+const DAY: u8 = 1;
 
 fn part1(input: Vec<String>) -> u32 {
     let array: Vec<u32> = input.iter().map(|s| s.parse::<u32>().unwrap()).collect();
@@ -30,9 +33,11 @@ fn part2(input: Vec<String>) -> u32 {
 }
 
 pub fn solution() {
-    println!("Day 1 \n");
-    println!("Part 1: {}", part1(get_input_of_day(1)));
-    println!("Part 2: {}", part2(get_input_of_day(1)));
+    let mut now = Instant::now();
+    println!("Day {} \n", DAY);
+    println!("Part 1: {} in {:.2?}", part1(get_input_of_day(DAY)), now.elapsed());
+    now = Instant::now();
+    println!("Part 2: {} in {:.2?}", part2(get_input_of_day(DAY)), now.elapsed());
     println!("-------------------------------------\n");
 }
 

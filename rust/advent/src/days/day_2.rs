@@ -1,4 +1,7 @@
 use crate::*;
+use std::time::Instant;
+
+const DAY: u8 = 2;
 
 fn part1(input: Vec<String>) -> u32 {
     let mut horizontal_sum = 0;
@@ -41,9 +44,11 @@ fn part2(input: Vec<String>) -> u32 {
 }
 
 pub fn solution() {
-    println!("Day 2 \n");
-    println!("Part 1: {}", part1(get_input_of_day(2)));
-    println!("Part 2: {}", part2(get_input_of_day(2)));
+    let mut now = Instant::now();
+    println!("Day {} \n", DAY);
+    println!("Part 1: {} in {:.2?}", part1(get_input_of_day(DAY)), now.elapsed());
+    now = Instant::now();
+    println!("Part 2: {} in {:.2?}", part2(get_input_of_day(DAY)), now.elapsed());
     println!("-------------------------------------\n");
 }
 

@@ -1,5 +1,6 @@
 use crate::*;
 use std::collections::HashMap;
+use std::time::Instant;
 
 const DAY: u8 = 6;
 
@@ -82,9 +83,11 @@ fn part2(input: Vec<String>) -> u64 {
 }
 
 pub fn solution() {
+    let mut now = Instant::now();
     println!("Day {} \n", DAY);
-    println!("Part 1: {}", part1(get_input_of_day(DAY)));
-    println!("Part 2: {}", part2(get_input_of_day(DAY)));
+    println!("Part 1: {} in {:.2?}", part1(get_input_of_day(DAY)), now.elapsed());
+    now = Instant::now();
+    println!("Part 2: {} in {:.2?}", part2(get_input_of_day(DAY)), now.elapsed());
     println!("-------------------------------------\n");
 }
 
