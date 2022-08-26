@@ -9,7 +9,7 @@
 |  Day 2: Dive!                                        |   [✔](java/src/com/aoc/Day02/Day02.java)    |   [✔](rust/advent/src/days/day_2.rs)    |
 |  Day 3: Binary Diagnostic  |   [✔](java/src/com/aoc/Day03/Day03.java )    |   [✔](java/rust/advent/src/days/day_3.rs)    |
 |  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |   [✔](java/rust/advent/src/days/day_4.rs)     |
-|  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |       |
+|  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |   [✔](java/rust/advent/src/days/day_5.rs)    |
 |  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |       |
 |  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |       |
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |        |

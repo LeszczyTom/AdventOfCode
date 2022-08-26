@@ -14,7 +14,7 @@ struct Board<'a> {
     checked_tiles: Vec<Vec<bool>>,
 }
 
-fn isBingo(board: &Board) -> bool {
+fn is_bingo(board: &Board) -> bool {
     for i in 0..5 {
         if board.checked_tiles[i][0] && 
             board.checked_tiles[i][1] &&
@@ -79,7 +79,7 @@ fn part1(input: Vec<String>) -> u32 {
                     if &bingo.boards[j].tiles[k][l] == i {
                         bingo.boards[j].checked_tiles[k][l] = true;
                     }
-                    if isBingo(&bingo.boards[j]) {
+                    if is_bingo(&bingo.boards[j]) {
                         return sum_of_unmarked(&bingo.boards[j]) * i.parse::<u32>().unwrap();
                     }  
                 }
@@ -117,7 +117,7 @@ fn part2(input: Vec<String>) -> u32 {
     }
 
     let mut last_score = 0;
-    while true {
+    for _ in 0..10000 {
         
         if bingo.boards.len() == 0 || bingo.numbers.len() == 1 {
             return last_score;
@@ -160,7 +160,7 @@ fn te(mut bingo: Bingo) -> Res {
         };
         let mut offset = 0;
         for j in 0..bingo.boards.len() {
-            if isBingo(&bingo.boards[j]) {
+            if is_bingo(&bingo.boards[j]) {
                 let sc = sum_of_unmarked(&tmp.boards[j - offset]) * bingo.numbers[i].parse::<u32>().unwrap();
                 tmp.boards.remove(j - offset);
                 offset += 1;
