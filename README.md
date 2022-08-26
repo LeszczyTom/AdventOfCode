@@ -5,12 +5,12 @@
 
 |                                                                                     | Java | Rust |
 |----------------------------------------------------------------------------------------|:--------:|:--------:|
-| Day 1: Sonar Sweep                                   |   [✔](java/src/com/aoc/Day01/Day01.java)    |   [✔](rust/advent/src/days/day_1.rs)    |
-|  Day 2: Dive!                                        |   [✔](java/src/com/aoc/Day02/Day02.java)    |   [✔](rust/advent/src/days/day_2.rs)    |
-|  Day 3: Binary Diagnostic  |   [✔](java/src/com/aoc/Day03/Day03.java )    |   [✔](rust/advent/src/days/day_3.rs)    |
-|  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |   [✔](rust/advent/src/days/day_4.rs)     |
-|  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |   [✔](rust/advent/src/days/day_5.rs)    |
-|  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |   [✔](rust/advent/src/days/day_6.rs)    |
+| Day 1: Sonar Sweep                                   |   [✔](java/src/com/aoc/Day01/Day01.java)    |   [2.08 ms](rust/advent/src/days/day_1.rs#L6) - [1.60 ms](rust/advent/src/days/day_1.rs#L20)    |
+|  Day 2: Dive!                                        |   [✔](java/src/com/aoc/Day02/Day02.java)    |   [4.57 ms](rust/advent/src/days/day_2.rs#L6) - [3.40 ms](rust/advent/src/days/day_2.rs#L25)   |
+|  Day 3: Binary Diagnostic  |   [✔](java/src/com/aoc/Day03/Day03.java )    |   [3.43 ms](rust/advent/src/days/day_3.rs#L6) - [3.41 ms](rust/advent/src/days/day_3.rs#L38)    |
+|  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |   [74.13 ms](rust/advent/src/days/day_4.rs#L50) - [69.91 ms](rust/advent/src/days/day_4.rs#L94)     |
+|  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |   [393.8 ms](rust/advent/src/days/day_5.rs#L45) - [638.5 ms](rust/advent/src/days/day_5.rs#L115)    |
+|  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |   [175.5 ms](rust/advent/src/days/day_6.rs#L32) - [1.84 ms](rust/advent/src/days/day_6.rs#L53)   |
 |  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |       |
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |        |
 |  Day 9: Smoke Basin |        |        |
