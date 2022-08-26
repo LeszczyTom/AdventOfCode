@@ -10,7 +10,7 @@
 |  Day 3: Binary Diagnostic  |   [✔](java/src/com/aoc/Day03/Day03.java )    |   [✔](rust/advent/src/days/day_3.rs)    |
 |  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |   [✔](rust/advent/src/days/day_4.rs)     |
 |  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |   [✔](rust/advent/src/days/day_5.rs)    |
-|  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |       |
+|  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |   [✔](rust/advent/src/days/day_6.rs)    |
 |  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |       |
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |        |
 |  Day 9: Smoke Basin |        |        |
