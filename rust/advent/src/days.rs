@@ -5,6 +5,7 @@ pub mod day_4;
 pub mod day_5;
 pub mod day_6;
 pub mod day_7;
+pub mod day_8;
 
 pub fn solutions() {
     day_1::solution();
@@ -14,4 +15,5 @@ pub fn solutions() {
     day_5::solution();
     day_6::solution();
     day_7::solution();
+    day_8::solution();
 }
