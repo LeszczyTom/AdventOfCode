@@ -11,7 +11,7 @@
 |  Day 4: Giant Squid    |   [✔](java/src/com/aoc/Day04/Day04.java)    |   [74.13 ms](rust/advent/src/days/day_4.rs#L50) - [69.91 ms](rust/advent/src/days/day_4.rs#L94)     |
 |  Day 5: Hydrothermal Venture |   [✔](java/src/com/aoc/Day05/Day05.java)     |   [393.8 ms](rust/advent/src/days/day_5.rs#L45) - [638.5 ms](rust/advent/src/days/day_5.rs#L115)    |
 |  Day 6: Lanternfish|   [✔](java/src/com/aoc/Day06/Day06.java)     |   [175.5 ms](rust/advent/src/days/day_6.rs#L32) - [1.84 ms](rust/advent/src/days/day_6.rs#L53)   |
-|  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |       |
+|  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |   [157.5 ms](rust/advent/src/days/day_7.rs#L33) - [147.9 ms](rust/advent/src/days/day_7.rs#L63)    |
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |        |
 |  Day 9: Smoke Basin |        |        |
 |  Day 10: Syntax Scoring |        |        |
