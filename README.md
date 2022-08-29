@@ -14,7 +14,7 @@
 |  Day 7: The Treachery of Whales |   [✔](java/src/com/aoc/Day07/Day07.java)    |   [157.5 ms](rust/advent/src/days/day_7.rs#L33) - [147.9 ms](rust/advent/src/days/day_7.rs#L63)    |
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |    [1.21 ms](rust/advent/src/days/day_8.rs#L17) - [13.17 ms](rust/advent/src/days/day_8.rs#L31)    |
 |  Day 9: Smoke Basin |        |    [3.74 ms](rust/advent/src/days/day_9.rs#L6) - [31.16 ms](rust/advent/src/days/day_9.rs#L23)    |
-|  Day 10: Syntax Scoring |        |        |
+|  Day 10: Syntax Scoring |        |   [2.62 ms](rust/advent/src/days/day_10.rs#L9) - [3.22 ms](rust/advent/src/days/day_10.rs#L31)     |
 |   Day 11: Dumbo Octopus |        |        |
 |   Day 12: Passage Pathing |        |        |
 |   Day 13: Transparent Origami |        |        |
