@@ -15,7 +15,7 @@
 |   Day 8: Seven Segment Search |   [✔](java/src/com/aoc/Day08/Day08.java)    |    [1.21 ms](rust/advent/src/days/day_8.rs#L17) - [13.17 ms](rust/advent/src/days/day_8.rs#L31)    |
 |  Day 9: Smoke Basin |        |    [3.74 ms](rust/advent/src/days/day_9.rs#L6) - [31.16 ms](rust/advent/src/days/day_9.rs#L23)    |
 |  Day 10: Syntax Scoring |        |   [2.62 ms](rust/advent/src/days/day_10.rs#L9) - [3.22 ms](rust/advent/src/days/day_10.rs#L31)     |
-|   Day 11: Dumbo Octopus |        |        |
+|   Day 11: Dumbo Octopus |        |     [5.25 ms](rust/advent/src/days/day_11.rs#L114) - [25.20 ms](rust/advent/src/days/day_11.rs#L123)   |
 |   Day 12: Passage Pathing |        |        |
 |   Day 13: Transparent Origami |        |        |
 |   Day 14: Extended Polymerization |        |        |
